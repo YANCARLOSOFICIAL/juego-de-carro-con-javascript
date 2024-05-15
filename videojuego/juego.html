@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro en Movimiento</title>
+    <style>
+        /* Estilo para el carro */
+        #car-container {
+            position: relative;
+            height: 200px; /* Altura del contenedor */
+            overflow: hidden; /* Para ocultar el cañón que sale fuera del contenedor */
+        }
+
+        #car {
+            position: absolute;
+            bottom: 20px; /* Posición vertical en la parte inferior */
+            left: 0; /* Posición inicial horizontal */
+            font-size: 48px; /* Tamaño del emoji */
+            transition: left 2s linear; /* Transición de movimiento horizontal */
+        }
+
+        /* Estilo para el cañón */
+        #cannon {
+            position: absolute;
+            bottom: 10px; /* Posición vertical en la parte inferior */
+            left: 50px; /* Posición horizontal */
+            font-size: 36px; /* Tamaño del emoji del cañón */
+            transform-origin: bottom center; /* Punto de origen de la rotación en la base del cañón */
+        }
+    </style>
+</head>
+<body>
+    <div id="car">
+        🏎️
+    </div>
+    <div id="cannon">
+        🏴
+    </div>
+
+    <!-- Incluimos el script JavaScript -->
+    <script src="juego.js"></script>
+</body>
+</html>
